@@ -5,6 +5,13 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+.title {
+
+    font-weight: 800;
+    font-size: 35px;
+
+}
+
 button {
     width: 167px;
     color: #FFFFFF;
@@ -36,11 +43,6 @@ nav div.nav-info-section {
 
 .nav-info-section-para {
     margin-left: 20px;
-}
-
-.nav-title {
-    font-weight: 700;
-    font-size: 35px;
 }
 
 .banner-heading {
@@ -92,13 +94,13 @@ nav div.nav-info-section {
     border-radius: 5px;
 }
 
-.feature-description {
+.quick-feature-description {
     width: 100%;
     text-align: left;
     margin-top: 70px;
 }
 
-.feature-description h3 {
+.quick-feature-description h3 {
 
     font-weight: 700;
     font-size: 25px;
@@ -112,9 +114,203 @@ nav div.nav-info-section {
     color: #FF900E;
 }
 
-.feature-description p {
+.quick-feature-description p {
     font-weight: 400;
     font-size: 12px;
     color: #727272;
     margin-bottom: 30px;
+}
+
+/* ===================
+  feature articles styles
+ --------------------- */
+
+.feature-articles {
+    display: flex;
+    margin: 100px 150px 100px 150px;
+    gap: 20px;
+}
+
+.feature-details-first {
+    width: 50%;
+
+}
+
+.feature-details-second {
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.feature-details-first h2 {
+    border-left: 3px solid #FF900E;
+    padding-left: 15px;
+}
+
+
+.feature-description-img {
+    width: 50%;
+}
+
+.feature-description-img img {
+    width: 100%;
+}
+
+.passages {
+    font-weight: 400;
+    font-size: 12px;
+    color: #727272;
+}
+
+/* experience-button-styles */
+.b {
+    display: flex;
+    justify-content: center;
+}
+
+.experience-button {
+    width: 180px;
+    height: 100px;
+    color: #FFFFFF;
+    background: #FF900E;
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.experience-text {
+    font-size: 12px;
+}
+
+.facts {
+    margin: 80px 650px 70px 150px;
+}
+
+/*
+ achievement styles
+ -----------------*/
+.achievements {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.achievement {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    padding: 40px 15px 5px 15px;
+    transition: transform 2s;
+}
+
+.achievement:hover {
+    background-color: #FF900E;
+    transform: rotate(360deg);
+}
+
+
+/* sponsports-styles */
+
+.sponsports-head {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.sponsports-logo {
+    margin: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Footer- */
+
+.footer {
+    background-color: rgb(202, 240, 228);
+    height: 70px;
+    margin: 100px;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 15px;
+}
+
+/* ====================
+       Media query 
+------------------------*/
+
+@media screen and (max-width:688px) {
+    nav {
+        flex-direction: column;
+
+    }
+
+    .banner-heading {
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .banner-img {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .banner-img img {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .quick-features {
+        flex-direction: column;
+        margin: 30px 20px 10px 20px;
+        gap: 30px;
+    }
+
+    .feature-images {
+
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        width: 100%;
+    }
+
+    .feature-articles {
+        flex-direction: column;
+        margin: 10px 15px;
+        gap: 20px;
+    }
+
+    .feature-details-first {
+        width: 100%;
+
+    }
+
+    .feature-description-img {
+        width: 100%;
+    }
+
+    .facts {
+        margin: 8px 65px 20px 15px;
+    }
+
+    .achievements {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sponsports-logo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer {
+        background-color: rgb(202, 240, 228);
+        height: 100px;
+        text-align: center;
+        border-radius: 5px;
+        padding-top: 5px;
+    }
 }
