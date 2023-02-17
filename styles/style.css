@@ -213,6 +213,28 @@ nav div.nav-info-section {
 }
 
 
+/* ====================
+introducing css3
+---------------------- */
+
+.introducing-css3 {
+    margin: 100px 200px 100px 200px;
+    border: 1px solid #727272;
+    border-radius: 10px;
+    background-color: #efa652;
+    padding-left: 20px;
+    padding-right: 60px;
+    box-shadow: -10px 10px 5px rgb(200, 132, 132);
+}
+
+.css3-info {
+    border-left: 4px solid brown;
+    padding-left: 30px;
+}
+
+
+
+
 /* sponsports-styles */
 
 .sponsports-head {
@@ -299,6 +321,17 @@ nav div.nav-info-section {
     .achievements {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .introducing-css3 {
+        margin: 10px 20px 10px 20px;
+        padding-left: 2px;
+        padding-right: 6px;
+        box-shadow: -10px 10px 5px rgb(200, 132, 132);
+    }
+
+    .css3-info {
+        padding-left: 15px;
     }
 
     .sponsports-logo {
